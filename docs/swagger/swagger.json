@@ -1,0 +1,59 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "Fast API",
+        "version": "0.1.0"
+    },
+    "paths": {
+        "/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                },
+                "summary": "Read Root",
+                "operationId": "read_root__get"
+            }
+        },
+        "/healthcheck": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                },
+                "summary": "Healthcheck",
+                "operationId": "healthcheck_healthcheck_get"
+            }
+        },
+        "/alert-groups/": {
+            "get": {
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {}
+                            }
+                        }
+                    }
+                },
+                "summary": "Get Alerts",
+                "description": "Get all currently available groups in a decaying memory frame\n\nReturns:\n    JSONResponse: Response with JSON encoded content of memory frame",
+                "operationId": "get_alerts_alert-groups__get"
+            }
+        }
+    }
+}
+
